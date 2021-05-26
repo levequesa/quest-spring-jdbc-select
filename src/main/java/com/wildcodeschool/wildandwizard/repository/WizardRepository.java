@@ -32,7 +32,7 @@ public class WizardRepository {
             );
             resultSet = statement.executeQuery();
 
-            List<Wizard> wizards = new ArrayList<>();
+            List<Wizard> wizards = new ArrayList<Wizard>();
 
             while (resultSet.next()) {
                 Long id = resultSet.getLong("id");
@@ -104,7 +104,7 @@ public class WizardRepository {
             statement.setString(1, lastName);
             resultSet = statement.executeQuery();
 
-            List<Wizard> wizards = new ArrayList<>();
+            List<Wizard> wizards = new ArrayList<Wizard>();
 
             while (resultSet.next()) {
                 Long id = resultSet.getLong("id");
